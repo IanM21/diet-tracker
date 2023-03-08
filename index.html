@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diet Tracker | Ian M</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header-wrapper">
+        <h1>Diet Tracker</h1>
+    </header>
+    <p>
+        This application is intedned to track the daily intake of calories and protein and display an <br>
+        accurate representation of the user's diet and how it compares to the recommended daily intake.
+    </p>
+    <br>
+    <div id="myform">
+        <form method="post">
+            <label for="calories">Calories</label>
+            <input type="number" name="calories" id="calories" placeholder="Enter calories">
+            <label for="protein">Protein</label>
+            <input type="number" name="protein" id="protein" placeholder="Enter protein">
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age" placeholder="Enter age">
+            <input type="button" value="Submit" id="submitbtn" onclick="calculate()">
+    </div>
+    <br><br>
+
+    <div id="progress-bar">
+        <label for="calories-bar">Calories:</label>
+        <progress id="calories-bar" value="0" max="100"></progress>
+        <span id="calories-bar-text">0</span>
+        <br>
+        <label for="protein-bar">Protein:</label>
+        <progress id="protein-bar" value="0" max="100"></progress>
+        <span id="protein-bar-text">0</span>
+    </div>
+    <footer>
+        <div class="footer-wrapper">
+          <span>Created By Ian McDonald </span>
+          <span class="current-year"></span>
+          <span><a href="https://github.com/IanM21/"> Github</a></span>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
